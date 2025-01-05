@@ -12,6 +12,8 @@ namespace Vidly.Models
         // Define DbSets for your models
         public DbSet<Movie> Movies { get; set; }
         public DbSet<Customers> Customers { get; set; }
+        public DbSet<MembershipType> MembershipTypes { get; set; }
+        public DbSet<Genre> Genres { get; set; }
     }
 
 }

@@ -19,11 +19,14 @@ namespace Vidly
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new Bundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js"));
+                      "~/Scripts/bootstrap.js",
+                      "~/Scripts/bootbox.js",
+                      "~/Scripts/datatables/jquery.datatables.js",
+                      "~/Scripts/datatables/datatables.bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap-morph.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css", "~/Content/datatables/css/datatables.bootstrap.css"));
         }
     }
 }
